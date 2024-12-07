@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="explore.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Lato:wght@100;300&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300&family=Barlow:wght@300&display=swap" rel="stylesheet">
+
+<nav>
+      <ul>
+        <li>
+          <a href="index.html">HOME</a>
+        </li>
+        <li>
+          <a href="info.html">INFO</a>
+        </li>
+        <li>
+          <a href="explore.html">EXPLORE</a>
+        </li>
+        <li>
+          <a href="forum.html">FORUM</a>
+        </li>
+      </ul>
+</nav>
+  
+</head>
+  
+<body>
+ 
+<center>
+  <div class= navButtons>
+<button class="ytVids"> <h2>
+  <a class="link1" href="#studyWithMe" style="text-decoration: none;">STUDY WITH ME </a></h2>
+</button> 
+<button class="cafe">  <h2> <a class="link2" href="#studyingCafe" style="text-decoration: none;"> STUDY CAFES </a></h2></button>
+<button class="spotify"><h2><a class="link3" href= "#studyPlaylist" style="text-decoration: none;"> STUDY PLAYLISTS </a></h2></button>
+<button class="studyingTips"><h2> <a class="link4" href="#studyTips" style="text-decoration: none;"> STUDY TIPS & SITES </a></h2></button>
+  </div>
+ 
+</center>
+  
+<!--  carousel starts here !  -->
+  
+ <style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color:#f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</body>
+  
+<body>
+<style>
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.containerVid {
+  position: relative;
+  width: 920px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+  .prev{
+    left:0;
+    border-radius:3px 0 0 3px;
+  }
+  
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+   font-family: 'Quicksand', sans-serif;
+}
+
+/* Container for image text */
+.caption-containerVid {
+  text-align: center;
+  background-color: #476343;
+  padding: 10px 16px;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 12.5%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+
+  
+<body>
+
+  <center> 
+<div id = studyWithMe class="containerVid">
+<h1 class="head1" style="text-align:center">STUDY WITH ME VIDEOS</h1>
+<p class="click" style="text-align:center"><strong>Click on the image to access the video!</strong></p>
+  
+  <div class="mySlides">
+    <div class="numbertext">1 / 8</div>
+<a href="https://www.youtube.com/watch?v=iWon8_6jK_o" imageanchor="1"><img src="https://i3.ytimg.com/vi/iWon8_6jK_o/maxresdefault.jpg"                style="width:100%"></a> 
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 8</div>
+      <a href="https://www.youtube.com/watch?v=V4wW44RjzJg" imageanchor="1"><img src="https://i3.ytimg.com/vi/V4wW44RjzJg/maxresdefault.jpg"   style="width:100%"></a> 
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 8</div>
+    <a href="https://www.youtube.com/watch?v=s9SCvGa7h_w&t=618s" imageanchor="1"> <img src="https://i3.ytimg.com/vi/s9SCvGa7h_w/maxresdefault.jpg" style="width:100%"> </a>
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 8</div>
+    <a href="https://www.youtube.com/watch?v=DXT9dF-WK-I" imageanchor="1"> <img src="https://i3.ytimg.com/vi/DXT9dF-WK-I/maxresdefault.jpg" style="width:100%"> </a>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 8</div>
+   <a href="https://www.youtube.com/watch?v=jHjHu5LOyAk&t=138s" imageanchor="1"> <img src="https://i3.ytimg.com/vi/jHjHu5LOyAk/maxresdefault.jpg" style="width:100%"> </a>
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 8</div>
+   <a href="https://www.youtube.com/watch?v=Va1hD4VvGaI" imageanchor="1">  <img src="https://i3.ytimg.com/vi/Va1hD4VvGaI/maxresdefault.jpg" style="width:100%"> </a>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">7 / 8</div>
+   <a href="https://www.youtube.com/watch?v=0lIWuXguJnA" imageanchor="1">  <img src="https://i3.ytimg.com/vi/0lIWuXguJnA/maxresdefault.jpg" style="width:100%"> </a>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">8 / 8</div>
+   <a href="https://www.youtube.com/watch?v=YtKw_b51AeI" imageanchor="1">  <img src="https://i3.ytimg.com/vi/YtKw_b51AeI/maxresdefault.jpg" style="width:100%"> </a>
+  </div>
+    
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-containerVid">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="https://i3.ytimg.com/vi/iWon8_6jK_o/maxresdefault.jpg" style="width:100%" onclick="currentSlide(1)" alt="3am cramming before exam // pencil asmr, page-flipping, no music, study with me">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i3.ytimg.com/vi/V4wW44RjzJg/maxresdefault.jpg" style="width:100%" onclick="currentSlide(2)" alt="[04.09.2021] study with me at a hotel">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i3.ytimg.com/vi/s9SCvGa7h_w/maxresdefault.jpg" style="width:100%" onclick="currentSlide(3)" alt="productive study vlog ☕️new semester, lots of studying (when i actually had motivation)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i3.ytimg.com/vi/DXT9dF-WK-I/maxresdefault.jpg" style="width:100%" onclick="currentSlide(4)" alt="4-HOUR STUDY WITH ME🌦️ / calm piano / A Rainy Day in Shinjuku, Tokyo / with countdown+alarm">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i3.ytimg.com/vi/jHjHu5LOyAk/maxresdefault.jpg" style="width:100%" onclick="currentSlide(5)" alt="study with me: late night edition with soft animal crossing piano tracks">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="https://i3.ytimg.com/vi/Va1hD4VvGaI/maxresdefault.jpg" style="width:100%" onclick="currentSlide(6)" alt="
+3-HOUR STUDY MUSIC PLAYLIST ☕Relaxing Lofi☕ Stay Motivate & Study With Me ☕DEEP FOCUS POMODORO TIMER">
+      </div>
+    
+       <div class="column">
+      <img class="demo cursor" src="https://i3.ytimg.com/vi/0lIWuXguJnA/maxresdefault.jpg" style="width:100%" onclick="currentSlide(7)" alt="
+rainy day study with me [2 hours no break] | real time, no music, real rain">
+         </div>
+      
+          <div class="column">
+      <img class="demo cursor" src="https://i3.ytimg.com/vi/YtKw_b51AeI/maxresdefault.jpg" style="width:100%" onclick="currentSlide(8)" alt="
+3-HOUR STUDY WITH ME 🌳 / calm piano + birds singing / a summer day in Tokyo / with countdown+alarm">
+    </div>
+</div>
+
+</div>
+    </center>
+</body>
+  
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.rowCafe {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.columnCafe {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.columnCafe img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+  
+<body>
+
+<!-- Header -->
+<div id="studyingCafe" class="studyCafe">
+
+  
+<div class= "header">
+  <h1 class="head2">STUDY CAFES</h1>
+  <h3 class="hover">Hover over the cafe's image to view its name and address.</h3>
+  <p class = "cafeDescription">Here are some cafes you can study at for a change of setting. We tried to include places have free WiFi, spacious interiors with many seats, and numerous outlets to provide you with a better studying experience. Most of the cafes are in NYC, but we included locations in other cities in the U.S. as well. </p>
+</div>
+
+  <center>
+<!-- Photo Grid -->
+<div class="rowCafe"> 
+  <div class="columnCafe">
+    <div class=cafe1-1>
+    <img class= "semicolonCafe" src="/pictures/semicolon cafe.png" style="width:100%">
+       <div class="overlay">
+    <div class="text1-1">
+      <h3>Semicolon Cafe</h3> 
+      <p> 3rd Ave, New York, NY 10016</p>
+  </div>
+</div>   
+    </div>
+
+     <div class=cafe1-2>
+    <img class= "nowOrNeverCoffee" src="https://cdn.shopify.com/s/files/1/0465/3406/6326/files/201020-NON-Coffee-Loc-01-15_1024x1024.jpg?v=1603890958" style="width:100%">
+       <div class="overlay">
+    <div class="text1-2">
+      <h3>Now or Never Coffee</h3> 
+      <p> 30 Grand St, New York, NY 10013</p>
+  </div>
+</div>   
+    </div>
+
+
+    <div class=cafe1-3>
+    <img class= "windowSeatCoffee" src="https://scontent-lga3-1.cdninstagram.com/v/t51.29350-15/288241458_101647895902922_4709478080570953398_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=50ZkThX6XG0AX_zsSkQ&_nc_ht=scontent-lga3-1.cdninstagram.com&edm=AEQ6tj4EAAAA&oh=00_AT_vOAqRBb-NeANVU3iSHKFdPibyfSebu1jVMzpRWqwxVw&oe=62DE0B35"  style="width:100%">
+       <div class="overlay">
+    <div class="text1-3">
+      <h3>Window Seat Coffee</h3> 
+      <p>3018 Greenville Ave, Dallas, TX 75206</p>
+  </div>
+</div>   
+    </div>
+    
+    <div class=cafe1-4>
+    <img class= "cafeBebitos" src="/pictures/bebitoscafe.png" style="width:100%">
+       <div class="overlay">
+    <div class="text1-4">
+      <h3>Bebito's Cafe</h3> 
+      <p> 1504 Bay Rd #106, Miami Beach, FL 33139</p>
+  </div>
+</div>   
+    </div>
+    </div>
+
+  <div class="columnCafe">
+     <div class=cafe2-1>
+    <img class= "mikaBushwick" src="https://bushwickdaily.com/wp-content/uploads/2021/04/1sf3s6QFHdhLrcbKUq0QIA.jpg">
+       <div class="overlay">
+    <div class="text2-1">
+      <h3>Mika Bushwick</h3> 
+      <p>  25 Thames St, Brooklyn, NY 11206 </p>
+  </div>
+</div>   
+    </div>
+   
+<div class=cafe2-2>
+    <img class="10000Coffee" src="https://cdn.imweb.me/upload/S20210909f5031bac8428d/8223ebd949535.jpg" style="width:100%">
+       <div class="overlay">
+    <div class="text2-2">
+      <h3>10000 Coffee</h3> 
+      <p> 1410 Broadway, New York, NY 10018</p>
+  </div>
+</div>   
+    </div>
+
+    <div class=cafe2-3>
+    <img class= "publicHotel" src=" https://www.publichotels.com/content/slides/13.jpg" style="width:100%">
+       <div class="overlay">
+    <div class="text2-3">
+      <h3>PUBLIC Hotel NYC</h3> 
+      <p>215 Chrystie St, New York, NY 10002</p>
+  </div>
+</div>   
+    </div>
+
+    <div class=cafe2-4>
+    <img class= "gridCoffee" src=" https://i.redd.it/snhfstaze3u61.jpg" style="width:100%">
+       <div class="overlay">
+    <div class="text2-4">
+      <h3>Grid Coffee</h3> 
+      <p>1139 S Diamond Bar Blvd Ste B, Diamond Bar, CA 91765</p>
+  </div>
+</div>   
+    </div>
+
+    
+  </div>  
+  
+  <div class="columnCafe">
+    <div class=cafe3-1>
+    <img class= "plowshares" src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.6435-9/62487853_2221969011255472_9159830310697828352_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=9267fe&_nc_ohc=MXk3IQeRgfIAX9Botp-&_nc_ht=scontent-lga3-1.xx&oh=00_AT8AAJh5Tmt1WMjZogpWdhDUL2Yk7pPFLo0OqHxRuSdN6w&oe=630017E8" style="width:100%">
+       <div class="overlay">
+    <div class="text3-1">
+      <h3>Plowshares Coffee Roasters</h3> 
+      <p> 1351 Amsterdam Ave, New York, NY 10027</p>
+  </div>
+</div>   
+    </div>
+
+    
+    <div class=cafe3-2>
+    <img class= "coffeeProject" src="https://coffeeprojectny.com/wp-content/uploads/2022/02/cafe-location-fort-greene-brooklyn-interior-2.jpg" style="width:100%">
+       <div class="overlay">
+    <div class="text3-2">
+      <h3>Coffee Project Brooklyn</h3> 
+      <p> 78 Rockwell Pl, Brooklyn, NY 11217</p>
+  </div>
+</div>   
+    </div>
+
+     <div class=cafe3-3>
+    <img class= "glasserCoffee" src="https://www.glassercoffee.co/uploads/1/3/3/8/133837474/0435aff1-345b-417b-bc39-1d3b2223b0d6_orig.jpg" style="width:100%">
+       <div class="overlay">
+    <div class="text3-3">
+      <h3>Glasser Coffee</h3> 
+      <p>  589 Washington St, Brighton, MA 02135</p>
+  </div>
+</div>   
+    </div>
+
+<div class=cafe3-4>
+    <img class= "coffeeConnection" src="https://i.pinimg.com/originals/97/75/bc/9775bc32df609f7f53fea5df2fac3424.jpg" style="width:100%">
+       <div class="overlay">
+    <div class="text3-4">
+      <h3>Coffee Connection</h3> 
+      <p>3838 S Centinela Ave, Los Angeles, CA 90066</p>
+  </div>
+</div>   
+    </div>
+    
+  </div>
+
+
+  
+  <div class="columnCafe">
+       <div class=cafe4-1>
+    <img class= "felixRoasting" src="https://dailycoffeenews.com/wp-content/uploads/2019/12/Copy-of-DSC00019-HDR-HDR-2-1-3.jpg" style="width:100%">
+       <div class="overlay">
+    <div class="text4-1">
+      <h3>Felix Roasting Company</h3> 
+      <p>450 Park Ave S, New York, NY 10016</p>
+  </div>
+</div>   
+    </div>
+
+    
+    <div class=cafe4-2>
+    <img class= "OTLCafe" src="https://www.miamidesigndistrict.net/images/listings/large/510_otl_1571341846070714.jpg" style="width:100%">
+       <div class="overlay">
+    <div class="text4-2">
+      <h3>OTL Cafe</h3> 
+      <p> 160 NE 40th St, Miami, FL 33137</p>
+  </div>
+</div>   
+    </div>
+  
+<div class=cafe4-3>
+    <img class= "bweKafe" src="https://images.squarespace-cdn.com/content/v1/5c1988195b409bb76917ba27/1628864530777-IF0OOIUJ3T9EZLWBUAT5/IMG_3038.jpg?format=750w" style="width:100%">
+       <div class="overlay">
+    <div class="text4-3">
+      <h3>bwe kafe</h3> 
+      <p> 1401 Adams Street, Hoboken NJ 07030 </p>
+  </div>
+</div>   
+    </div>
+    
+<div class=cafe4-4>
+    <img class= "eastPole" src="https://cdn.shopify.com/s/files/1/0354/0461/1722/files/LBP_8480_1296x.jpg?v=1609884939" style="width:100%">
+       <div class="overlay">
+    <div class="text4-4">
+      <h3>East Pole Coffee </h3> 
+      <p>255 Ottley Dr NE #105, Atlanta, GA 30324</p>
+  </div>
+</div>   
+    </div>
+    
+        
+<div class=cafe4-5>
+    <img class= "atmosCoffee" src="/pictures/atmosCoffeeShop.jpg" style="width:100%">
+       <div class="overlay">
+    <div class="text4-5">
+      <h3>Atmos Coffee Shop </h3> 
+      <p>2415 W North Ave, Chicago, IL 60647</p>
+  </div>
+</div>   
+    </div>
+    
+    
+  </div>
+</div>
+</div>
+</center>
+  
+<!-- for cafe1-1 -->
+<style>
+.cafe1-1 {
+  position: relative;
+/*   width: 50%; */
+}
+
+.semicolonCafe {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #476343;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.cafe1-1:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text1-1 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+<!--   for cafe1-2 -->
+  <style>
+.cafe1-2 {
+  position: relative;
+/*   width: 50%; */
+}
+
+.nowOrNeverCoffee {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #476343;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.cafe1-2:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text1-2 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+
+   <style>
+.cafe1-3 {
+  position: relative;
+/*   width: 50%; */
+}
+
+.windowSeatCoffee {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #476343;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.cafe1-3:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text1-3 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+
+   <style>
+.cafe1-4 {
+  position: relative;
+/*   width: 50%; */
+}
+
+.cafeBebitos {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #476343;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.cafe1-4:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text1-4 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+<!-- for cafe 2-1 -->
+  <style>
+.cafe2-1 {
+  position: relative;
+/*   width: 50%; */
+}
+
+.mikaBushwick {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #476343;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.cafe2-1:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text2-1 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+<!-- for cafe 2-2 -->
+
+   <style>
+.cafe2-3 {
+  position: relative;
+/*   width: 50%; */
+}
+
+.publicHotel {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #476343;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.cafe2-3:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text2-3 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+  <style>
+.cafe2-2 {
+  position: relative;
+/*   width: 50%; */
+}
+
+.a10000Coffee {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #476343;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.cafe2-2:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text2-2 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+<style>
+.cafe2-4 {
+  position: relative;
+/*   width: 50%; */
+}
+
+.gridCoffee {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #476343;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.cafe2-4:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text2-4 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+
+  <!-- for cafe 3-1 -->
+<style>
+  .cafe3-1 {
+  position: relative;
+/*   width: 50%; */
+}
+
+.plowshares {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #476343;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.cafe3-1:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text3-1 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+<!-- for cafe 3-2 -->
+  <style>
+.cafe3-2 {
+  position: relative;
+/*   width: 50%; */
+}
+
+.coffeeProject {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #476343;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.cafe3-2:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text3-2 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+
+ 
+   <style>
+.cafe3-3 {
+  position: relative;
+/*   width: 50%; */
+}
+
+.glasserCoffee {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #476343;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.cafe3-3:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text3-3 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style> 
+  
+   <style>
+.cafe3-4 {
+  position: relative;
+/*   width: 50%; */
+}
+
+.coffeeConnection {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #476343;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.cafe3-4:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text3-4 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style> 
+<!-- for cafe 4-1 -->
+  <style>
+.cafe4-1 {
+  position: relative;
+/*   width: 50%; */
+}
+
+.felixRoasting {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #476343;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.cafe4-1:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text4-1 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+
+   <style>
+.cafe4-2 {
+  position: relative;
+/*   width: 50%; */
+}
+
+.OTLCafe {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #476343;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.cafe4-2:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text4-2 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+
+  
+<style>
+.cafe4-3 {
+  position: relative;
+/*   width: 50%; */
+}
+
+.bweKafe {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #476343;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.cafe4-3:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text4-3 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+
+<style>
+.cafe4-4 {
+  position: relative;
+/*   width: 50%; */
+}
+
+.eastPole {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #476343;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.cafe4-4:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text4-4 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+
+  
+<style>
+.cafe4-5 {
+  position: relative;
+/*   width: 50%; */
+}
+
+.atmosCoffee {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #476343;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.cafe4-5:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text4-5 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+  
+<div id="studyPlaylist" class="playlists">
+   <center>
+  <h1 class="head3">STUDY PLAYLISTS</h1>
+  <h3 class="playlistDesc">Here are some playlists we created for you to study with.</h3>
+    <p class="music"> To some, listening to some music can increase productivity. Not to mention, it can serve as a source of entertainment amidst the completion of mundane assignments.</p>
+  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6s1O7IXfJxMe64caFDqG9g?utm_source=generator" width="17%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
+  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6cJZ5pEYl5MPc5Z4eiqteF?utm_source=generator" width="17%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
+  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2aH2unAw8USTuKjph06B5x?utm_source=generator" width="17%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
+  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2syw0uCPsmq9dhcthhBG7J?utm_source=generator" width="17%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
+  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0wPl4g5GInsScbPjXOeecC?utm_source=generator" width="17%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+  </center>
+</body>
+
+<div id="studyTips" class="tips">
+<center>
+  <h1 class="head4">STUDY TIPS & SITES</h1>
+  <h2 class="tips">5 Study Tips</h2>
+</center> 
+
+<div class="fiveTips">
+  <h3 class ="activeRecall">1.  Active Recall</h3>
+  <p class="ar">Active recall is a study method proven to be effective that is almost the reverse of the traditional way of studying. Instead of reading text passively, students create questions for themselves to answer based on the topic and main ideas. As they  repeatedly test themselves on the material, their brains actively recall the content.</p>
+
+   <h3 class="schedule">2.  Schedule Your Studying</h3>
+  <p class="sO">By planning out what you will study over days or even weeks, you can digest the content easier. Reviewing your notes everyday for 15 minutes  and having control over your studying schedule prepares you for longer term exams such as midterms or finals.</p>
+
+   <h3 class="content">3. Explain the Content to Someone </h3>
+  <p class="eTCTS"> When you explain the content to other individuals, you can pinpoint the topics you need to review or study more. You can make more conceptual connections while you recap the material to someone else. </p>
+
+   <h3 class="practice">4. Practice Questions</h3>
+  <p class=pQ>Practice questions for various topics are easily accessible online and are a great way to assess your knowledge. Record the questions you answer incorrectly so you can understand your weaknesses and work towards strengthening them.</p>
+
+   <h3 class="different">5. Rewrite or Retype Notes</h3>
+  <p class="rewrite">It may be tedious but rewriting or retyping notes commit them to memory and you are reviewing the topic as you do it. What you write can be used as a study sheet, too. A hack to find study sheets is to Google: [TOPIC] + CHEAT SHEET + FILETYPE:PDF. For example, if you needed a biology study sheet, search "biology cheat sheet filetype:pdf."</p>
+    
+</div>
+
+  
+<center>
+<h3 class="sites">Companion Sites:</h3>
+
+<div class="buttonSites">
+ <button class=lifeAt> <h2> <a class="link5" href = "https://v1.lifeat.io/"> LIFEAT </h2></button>
+  <button class=iMMC> <h2> <a class="link6" href = "https://imissmycafe.com/"> I MISS MY CAFE </h2> </button>
+  <button class=vCottage> <h2> <a class="link7" href = "https://dui.itch.io/virtual-cottage"> VIRTUAL COTTAGE </h2> </button>
+</div>
+</center>
+
+
+
+
+
+</body>
+</html>
